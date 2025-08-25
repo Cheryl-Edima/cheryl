@@ -1,0 +1,193 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonts */
+body {
+    font-family: 'Gabriola', sans-serif;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: black;
+    padding: 1rem 0;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: wheat;
+    text-decoration: none;
+    font-family: 'Gabriola', sans-serif;
+    letter-spacing: 1px;
+}
+
+.nav-links a:hover {
+    color: #ff9800;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    background: #f4f4f4;
+}
+
+.hero-text h1 {
+    text-transform: uppercase;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    background: #e0e0e0;
+}
+
+.about img {
+    border-radius: 1000vh;
+    margin-right: 20px;
+    height: 350px;
+}
+
+.project{
+    text-align: center;
+    
+}
+
+.card {
+    border: 2px solid black;
+    width: 40%;
+    border-radius: 15px;
+}
+.Hero{
+    background-image: url(./assets/images/hero.jpg);
+    height: 100vh;
+}
+.Card{
+    border: 2px solid black;
+    width: 15%;
+    margin-bottom: 0.9rem;
+    border-radius: 15px;
+}
+.reck{
+    padding: 1rem;
+}
+.meh{
+    text-align: center;
+    margin-bottom: 0.9rem;
+}
+
+.print{
+    border-radius: 15px;
+}
+.Card-Container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.Dog{
+    width: 200px;
+}
+.Card-Containers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.text{
+    width: 50%;
+    margin-left: 2rem;
+
+}
+
+/* Contact Section */
+.contact {
+    padding: 2rem;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact input,
+.contact textarea {
+    width: 1000px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: rgb(161, 161, 240);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: turquoise
+}
+
+.contact button {
+    background: rgb(161, 161, 240);;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background: beige
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+    .project-list {
+        flex-direction: column;
+    }
+}
+h1{
+    color: black;
+    font-size: 70px;
+    font-weight: 900;
+    
+}
+h2{
+    color: black;
+    font-size: 40px;
+    font-weight: 600;
+}
+p{
+    font-size:20px;  
+}
